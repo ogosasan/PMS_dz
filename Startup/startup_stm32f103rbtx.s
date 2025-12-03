@@ -66,9 +66,9 @@ loop:
 	b loop
 
 hamming_encode_16:
+	push {r0, r1, r2, r3, lr}
 	ldr r0, =0xBC22
-    push {r4, r5, lr}
-
+    
     mov r1, #0
     //0-2
     mov r2, r0
@@ -180,7 +180,7 @@ hamming_encode_16:
     lsl r3, #15
     orr r1, r3
 
-    pop {r4, r5, pc}
+    pop {r0, r1, r2, r3, pc}
 
 
 parity_bit:

@@ -1,0 +1,29 @@
+# Build directories
+Debug/
+Release/
+build/
+
+# Compiler output
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.srec
+*.list
+*.a
+
+# IDE temp files
+.metadata/
+.settings/
+.cproject
+.project
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
